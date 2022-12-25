@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4c531;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    width: 26.5rem;
+    padding: 2.5em 3em;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    border-radius: 8.6em;
+    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0, 0.2);
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 0.6em;
+}
+
+.stats-container {
+    text-align: right;
+    margin-bottom: 1.2em;
+}
+
+.stats-container span {
+    font-weight: 600;
+}
+
+.card-container {
+    position: relative;
+    width: 6.25rem;
+    height: 6.25rem;
+    cursor: pointer;
+}
+
+.card-before,
+.card-after {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border: 4px solid #000000;
+    transition: transform 0.7s ease-out;
+    backface-visibility: hidden;
+}
+
+.card-before {
+    background-color: #f4c531;
+    font-weight: 600;
+    font-size: 2.8em;
+}
+
+.card-after {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-before {
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-after {
+    transform: rotateY(0deg);
+}
+
+.controls-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #f4c531;
+    top: 0;
+}
+
+button {
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+
+#stop {
+    font-size: 1.1em;
+    display: block;
+    margin: 1.1em auto 0 auto;
+    background-color: black;
+    color: white;
+}
+
+.controls-container button {
+    font-size: 1.3em;
+    box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0, 0.2);
+}
+
+.hide {
+    display: none;
+}
+
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 2.5em;
+}
+
+#result h4 {
+    font-size: 1.8em;
+    margin: 0.6em 0 1em 0;
+}
