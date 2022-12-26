@@ -11,15 +11,15 @@ body {
 
 .wrapper {
     box-sizing: content-box;
-    width: 26.5rem;
+    width: 26.87em;
     padding: 2.5em 3em;
     background-color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    right: 50%;
-    border-radius: 8.6em;
-    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0, 0.2);
+    top: 50%;
+    border-radius: 0.6em;
+    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
 }
 
 .game-container {
@@ -40,8 +40,8 @@ body {
 
 .card-container {
     position: relative;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 6.25em;
+    height: 6.25em;
     cursor: pointer;
 }
 
@@ -53,7 +53,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     border: 4px solid #000000;
     transition: transform 0.7s ease-out;
     backface-visibility: hidden;
@@ -61,12 +61,12 @@ body {
 
 .card-before {
     background-color: #f4c531;
-    font-weight: 600;
     font-size: 2.8em;
+    font-weight: 600;
 }
 
 .card-after {
-    background-color: white;
+    background-color: #ffffff;
     transform: rotateY(180deg);
 }
 
@@ -101,13 +101,13 @@ button {
     font-size: 1.1em;
     display: block;
     margin: 1.1em auto 0 auto;
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .controls-container button {
     font-size: 1.3em;
-    box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0, 0.2);
+    box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0.2);
 }
 
 .hide {
