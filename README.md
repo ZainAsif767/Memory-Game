@@ -1,12 +1,12 @@
 # Memory-Game
 
-##Overview
+## Overview
 This memory game is made using
 - HTML5
 - CSS3
 - Vanilla JS
 
-###Screenshot
+### Screenshot
 
 ![](mg1.PNG)
 
@@ -14,7 +14,7 @@ This memory game is made using
 
 ![](mg3.PNG)
 
-###Links
+### Links
 
 Live URL: [click here](https://memory-game-99.netlify.app/)
 Solution: [GitHub](https://github.com/ZainAsif767/Memory-Game)
