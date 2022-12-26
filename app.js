@@ -129,3 +129,36 @@ const matrixGenerator = (cardValues, size = 4) => {
         });
     });
 };
+//Start game
+startButton.addEventListener("click", () => {
+    movesCount = 0;
+    seconds = 0;
+    minutes = 0;
+    //controls amd buttons visibility
+    controls.classList.add("hide");
+    stopButton.classList.remove("hide");
+    startButton.classList.add("hide");
+    //Start timer
+    interval = setInterval(timeGenerator, 1000);
+    //initial moves
+    moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+    initializer();
+});
+//Stop game
+stopButton.addEventListener(
+    "click",
+    (stopGame = () => {
+        controls.classList.remove("hide");
+        stopButton.classList.add("hide");
+        startButton.classList.remove("hide");
+        clearInterval(interval);
+    })
+);
+//Initialize values and func calls
+const initializer = () => {
+    result.innerText = "";
+    winCount = 0;
+    let cardValues = generateRandom();
+    console.log(cardValues);
+    matrixGenerator(cardValues);
+};
