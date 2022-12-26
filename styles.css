@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: #f4c531;
+    background-color: #EAE7B1;
 }
 
 .wrapper {
     box-sizing: content-box;
     width: 26.87em;
     padding: 2.5em 3em;
-    background-color: #ffffff;
+    background-color: #A6BB8D;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -60,7 +60,7 @@ body {
 }
 
 .card-before {
-    background-color: #f4c531;
+    background-color: #61876E;
     font-size: 2.8em;
     font-weight: 600;
 }
@@ -86,15 +86,52 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #f4c531;
+    background-color: #3C6255;
     top: 0;
 }
 
 button {
     border: none;
-    border-radius: 0.3em;
-    padding: 1em 1.5em;
+    border-radius: 12px;
+    padding: 20px 35px;
     cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    margin: 5px;
+
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+
+}
+
+button:hover {
+    background-color: #A6BB8D;
+    color: black;
+
+}
+
+button:hover span {
+    padding-right: 20px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 #stop {
@@ -125,4 +162,10 @@ button {
 #result h4 {
     font-size: 1.8em;
     margin: 0.6em 0 1em 0;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+
 }
